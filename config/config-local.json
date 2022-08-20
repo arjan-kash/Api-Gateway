@@ -1,0 +1,46 @@
+{
+    "production": false,
+    "logging": {
+      "access_log_location": "logs/access.log",
+      "log_location": "logs/log4js.log"
+    },
+    "http": {
+      "port": 3001,
+      "session_token": "somesecrettokenhere"
+    },
+
+  "jwt": { 
+      "oldsecret": "abcdefgh123456789", 
+      "secret": "qwexpkmjrufgdtyebchurswemitjuffrhtnsaazxcrctvybokcloudconnect",
+      "appSecret": "juhbyVEUWQNJZjieiItuhbbsqlpYTGbheitsverysecretcloudconnect",
+      "authTokenInterval": 6,
+      "client": {
+        "id": "abcdefgh123456789",
+        "expireTime": 3,
+        "encryptionFlag": false
+      }
+    },
+    "s3":{
+      "upload_path": "images/",
+      "bucket_name": "ygfile-test-cdn-assets",
+      "region": "us-west-2",
+      "imageHost": "http://localhost:3000/upload/"
+     },
+    "database":{
+      "host":"119.18.55.154",
+      "port":3306,
+      "db_name":"cc_master",
+      "username":"ccuser",
+      "password":"cloudVirAmiNag119",
+      "dialect":"mysql"
+    },
+    "mailing": {
+      "host": "smtp.gmail.com",
+      "port": 587,
+      "SSL": false,
+      "user": "helpdesk@cloud-connect.in",
+      "pass": "Helpdesk#2013*",
+      "from": "helpdesk@cloud-connect.in"
+    }
+  }
+   

@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var express=require("express"),praviteRouter=require("./secured-api.routes"),publicRouter=require("./public-api.routes"),ROUTER=express.Router();ROUTER.use("/",praviteRouter),ROUTER.use("/",publicRouter),module.exports=ROUTER;
